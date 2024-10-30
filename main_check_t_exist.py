@@ -9,7 +9,7 @@ mydb = mysql.connector.connect(
 )
 
 mycursor = mydb.cursor()
-
+mycursor.execut("USE Animali")
 mycursor.execute("SHOW TABLES")
 
 for x in mycursor:
